@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms in table task</title>
+    <style>
+     /* table ,td{
+border: 1px solid black;
+border-collapse: collapse;
+     }  */
+    </style>
+  </head>
+  <body>
+    <marquee behavior="scroll" direction="right" scrollamount="3"><h1>Registration Form</h1></marquee>
+    <form action="./day7-nav.html" style="background-color: rgb(187, 205, 238);" >
+    <table align="center">
+      <tr>
+        <td><label for="f_name"> First name:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="text" name="f_name" id="name" /></td>
+      </tr>
+      <tr>
+        <td><label for="l_name">Last name:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="text" name="l_name" id="l_name" /></td>
+      </tr>
+      <tr>
+        <td><label for="uname">Username:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="text" name="uname" id="uname" /></td>
+      </tr>
+      <tr>
+        <td><label for="mail">Email:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="Email" name="mail" id="mail" required/></td>
+      </tr>
+      <tr>
+        <td><label for="pass">Password:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="password" name="pass" id="pass" /></td>
+      </tr>
+      <tr>
+        <td><label for="repass">Retype password:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="password" name="pass" id="pass" /></td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="date" name="dob" id="dob" /></td>
+      </tr>
+      <td><label for="dob">Qualification:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><select>
+            <optgroup label="Bachelor's degree">
+                <option value="Bsc">B.Sc</option>
+                <option value="BA">B.A</option>
+                <option value="Bcom">B.Com</option>
+                <option value="BCA">BCA</option>
+              <option value="b.tech"> B.Tech</option></optgroup>
+                <optgroup label="master's degree">
+                  <option value="MTech"> M.Tech</option>
+                  <option value="MA"> M.Tech</option>
+                  <option value="M.Com"> M.Com</option>
+                  <option value="MBA"> MBA</option></select>
+                
+      </tr>
+      <td><label for="photo">passport size photo:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="file" name="photo" id="photo" /></td>
+      </tr>
+      <td><label for="resume">Upload resume</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+        <td><input type="file" name="resume" id="resume"/></td>
+      </tr>
+      <tr>
+      <td><label for="religion">Religion:</label></td>
+        <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+         --><td> 
+          <select name="religon" id="religion">
+            <option value="hin">Hindu</option>
+            <option value="christ">Christian</option>
+            <option value="Islam">Islam</option>
+            <option value="sihk">Sikh</option>
+            <option value="other">Others</option>
+           </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="state">State:</label></td>
+          <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+          <td><input type="text" name="state" id="state"><td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+            <!-- <td>&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+            <td><input type="textarea" name="state" id="state" ><td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit"></td>
+            </tr>
+    </table> </form>       
+  </body>
+</html>
